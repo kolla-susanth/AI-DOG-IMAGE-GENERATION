@@ -1,4 +1,4 @@
-const token = "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";
+const token = ""// Enter your hugging face token ;
 const inptxt = document.getElementById("input");
 const image = document.getElementById("image");
 const button = document.getElementById("dtn");
