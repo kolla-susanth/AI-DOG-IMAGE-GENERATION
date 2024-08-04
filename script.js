@@ -1,4 +1,4 @@
-const token = ""// Enter your hugging face token ;
+// const token = ""// Enter your hugging face token ;
 const inptxt = document.getElementById("input");
 const image = document.getElementById("image");
 const button = document.getElementById("dtn");
@@ -7,7 +7,7 @@ async function query(data) {
     const response = await fetch(
         "https://api-inference.huggingface.co/models/susanth73825/myepxwithai", {
             headers: {
-                Authorization: `Bearer ${process.env.token}`
+                Authorization: `Bearer ${token}`
             },
             method: "POST",
             body: JSON.stringify(data),
