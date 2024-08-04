@@ -7,7 +7,7 @@ async function query(data) {
     const response = await fetch(
         "https://api-inference.huggingface.co/models/susanth73825/myepxwithai", {
             headers: {
-                Authorization: `Bearer ${token}`
+                Authorization: `Bearer ${process.env.token}`
             },
             method: "POST",
             body: JSON.stringify(data),
